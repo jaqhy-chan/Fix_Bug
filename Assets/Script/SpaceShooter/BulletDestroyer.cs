@@ -9,11 +9,11 @@ public class BulletDestroyer : MonoBehaviour
     {
         if (collision.CompareTag("Bullet"))
         {
-            Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
         }
         if (collision.CompareTag("EnemyBullet"))
         {
-            Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
         }
     }
 }
